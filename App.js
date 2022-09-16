@@ -1,24 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import {Provider as PaperProvider} from 'react-native-paper';
-import Screen from './Screens/MainScreen';
+import React from 'react';
+import { StyleSheet,  View, Text } from 'react-native';
+import {Provider as PaperProvider, Button} from 'react-native-paper';
 
 export default function App() {
   return (
-    <PaperProvider>
-      <Screen/>
-    </PaperProvider>
+      <View style={styles.container}>
+        <Text>Open up App.js to start working on your app!</Text>
+        <StatusBar style="auto" />
+      </View>
   );
 }
-
-// export default function App() {
-//   return (
-//     <View style={styles.container}>
-//       <Text>Hey bitch!!</Text>
-//       <StatusBar style="auto" />
-//     </View>
-//   );
-// }
 
 const styles = StyleSheet.create({
   container: {
